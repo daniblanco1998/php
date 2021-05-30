@@ -15,6 +15,13 @@ $aPacientes[] = array(
     "peso" => 79
 );
 
+$aPacientes[] = array(
+    "dni" => "24.693.738",
+    "nombre" => "Daniel Blanco",
+    "edad" => "23",
+    "peso" => 70
+);
+
 
 ?>
 
@@ -49,15 +56,18 @@ $aPacientes[] = array(
                     </thead>
 
                     <tbody>
-                    <?php 
-                        foreach($aPacientes as )
-                    ?>
-                       <tr>
-                           <td><?php echo $pacientes["dni"]; ?></td>
-                           <td><?php echo $pacientes["nombre"]; ?></td>
-                           <td><?php echo $pacientes["edad"]; ?></td>
-                           <td><?php echo $pacientes["peso"]; ?></td>
-                       </tr>
+                        <?php
+                        foreach ($aPacientes as $paciente) {
+                        ?>
+
+                            <tr>
+                                <td><?php echo $paciente["dni"]; ?></td>
+                                <td><?php echo $paciente["nombre"]; ?></td>
+                                <td><?php echo $paciente["edad"]; ?></td>
+                                <td><?php echo $paciente["peso"]; ?></td>
+                            </tr>
+
+                        <?php } ?>
 
 
                     </tbody>
